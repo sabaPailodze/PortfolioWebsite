@@ -38,7 +38,9 @@ const ShowcaseSection = () => {
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={project1}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="TIKSIT" />
+              <a href="https://tiksit.com/     " target="_blank">
+                <img src="/images/project1.png" alt="TIKSIT" />
+              </a>
               {/* am images magivrad unda ikos TIKSIT is foto  */}
             </div>
             <div className="text-content">
@@ -56,7 +58,9 @@ const ShowcaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2}>
               <div className="image-wrapper bg-[#ffeddb]">
-                <img src="/images/project2.png" alt="Kolkhisea" />
+                <a href="https://kolkhisea.vercel.app/" target="_blank">
+                  <img src="/images/project2.png" alt="Kolkhisea" />
+                </a>
                 {/* aq ikneba KOlkhiseas is foto */}
               </div>
               <h2>
@@ -66,7 +70,12 @@ const ShowcaseSection = () => {
             </div>
             <div className="project" ref={project3}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="/images/project3.png" alt="usePopCorn" />
+                <a
+                  href="https://use-popcorn-iota-pearl.vercel.app/"
+                  target="_blank"
+                >
+                  <img src="/images/project3.png" alt="usePopCorn" />
+                </a>
                 {/* aq ikneba usePopcorn is foto */}
               </div>
               <h2>

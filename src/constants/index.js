@@ -267,17 +267,22 @@ const socialImgs = [
   {
     name: "insta",
     url: "https://www.instagram.com/pailodze_saba/",
-    imgPath: "/images/insta.png",
+    imgPath: "/images/instagram1.svg",
   },
   {
     name: "fb",
     url: "https://www.facebook.com/profile.php?id=100008080189238",
-    imgPath: "/images/fb.png",
+    imgPath: "/images/facebook1.svg",
   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/saba-pailodze-040952300/",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/inkedin1.svg",
+  },
+  {
+    name: "github",
+    url: "https://github.com/sabaPailodze",
+    imgPath: "/images/github1.svg",
   },
 ];
 
