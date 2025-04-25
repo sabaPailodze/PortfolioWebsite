@@ -266,22 +266,17 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/pailodze_saba/",
     imgPath: "/images/insta.png",
   },
   {
     name: "fb",
-    url: "https://www.facebook.com/",
+    url: "https://www.facebook.com/profile.php?id=100008080189238",
     imgPath: "/images/fb.png",
   },
   {
-    name: "x",
-    url: "https://www.x.com/",
-    imgPath: "/images/x.png",
-  },
-  {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/saba-pailodze-040952300/",
     imgPath: "/images/linkedin.png",
   },
 ];
