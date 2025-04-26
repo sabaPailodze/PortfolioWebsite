@@ -45,12 +45,13 @@ const ShowcaseSection = () => {
             </div>
             <div className="text-content">
               <h2>
-                On Demand Rides Made Simple With a Powerfull, User-Friendly App
-                Called Ryde
+                TIKSIT — All You Need. One App.
                 {/* aq unda ikos chemi teqsti TIKSIT - ze */}
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app build with React and Next.js
+                From event tickets to restaurant reservations and unique
+                experiences — TIKSIT makes discovering and booking simple, fast,
+                and seamless.
                 {/* aq unda ikos agwera tiksit - is razea dawerili */}
               </p>
             </div>
@@ -64,9 +65,14 @@ const ShowcaseSection = () => {
                 {/* aq ikneba KOlkhiseas is foto */}
               </div>
               <h2>
-                Kolkhisea information
+                Kolkhisea - Modern Living, Built for You
                 {/* informacia usePopcornze razea dawerili, mokled */}
               </h2>
+              <p>
+                A real estate and construction company offering high-quality
+                apartments for sale. Explore, choose, and invest in your future
+                — directly from the source (inProgress).
+              </p>
             </div>
             <div className="project" ref={project3}>
               <div className="image-wrapper bg-[#ffe7eb]">
@@ -79,9 +85,14 @@ const ShowcaseSection = () => {
                 {/* aq ikneba usePopcorn is foto */}
               </div>
               <h2>
-                usePopcorn information
+                usePopcorn - Your Ultimate Movie Companion
                 {/* informacia usePopcornze razea dawerili, mokled */}
               </h2>
+              <p>
+                Discover films, check details, favorite what you love, and
+                manage your watchlist — all with a clean and intuitive
+                interface.
+              </p>
             </div>
           </div>
         </div>

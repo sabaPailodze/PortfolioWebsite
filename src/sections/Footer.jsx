@@ -1,4 +1,5 @@
 import { socialImgs } from "../constants";
+import Foto from "../../public/images/logos/Foto";
 
 const Footer = () => {
   return (
