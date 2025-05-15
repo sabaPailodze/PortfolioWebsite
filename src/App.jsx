@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <NavBar />
-      {/* <Hero /> */}
+      <Hero />
       <ShowcaseSection />
       <FeatureCards />
       <ExperienceSection />
