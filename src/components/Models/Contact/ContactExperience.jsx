@@ -1,44 +1,108 @@
+// import { OrbitControls } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+
+// import Computer from "./Computer";
+
+// const ContactExperience = () => {
+//   return (
+//     <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
+//       <ambientLight intensity={0.5} color="#fff4e6" />
+
+//       <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
+
+//       <directionalLight
+//         position={[5, 9, 1]}
+//         castShadow
+//         intensity={2.5}
+//         color="#ffd9b3"
+//       />
+
+//       <OrbitControls
+//         enableZoom={false}
+//         minPolarAngle={Math.PI / 5}
+//         maxPolarAngle={Math.PI / 2}
+//       />
+
+//       <group scale={[1, 1, 1]}>
+//         <mesh
+//           receiveShadow
+//           position={[0, -1.5, 0]}
+//           rotation={[-Math.PI / 2, 0, 0]}
+//         >
+//           <planeGeometry args={[30, 30]} />
+//           <meshStandardMaterial color="#a46b2d" />
+//         </mesh>
+//       </group>
+
+//       <group scale={0.03} position={[0, -1.49, -2]} castShadow>
+//         <Computer />
+//       </group>
+//     </Canvas>
+//   );
+// };
+
+// export default ContactExperience;
+
+import React, { useState, useEffect, Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
 import Computer from "./Computer";
 
 const ContactExperience = () => {
-  return (
-    <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
-      <ambientLight intensity={0.5} color="#fff4e6" />
+  const [isClient, setIsClient] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
-      <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
+  // Check if we're in the browser environment
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-      <directionalLight
-        position={[5, 9, 1]}
-        castShadow
-        intensity={2.5}
-        color="#ffd9b3"
-      />
+  // Don't render anything on server or if there's an error
+  if (!isClient || hasError) return null;
 
-      <OrbitControls
-        enableZoom={false}
-        minPolarAngle={Math.PI / 5}
-        maxPolarAngle={Math.PI / 2}
-      />
-
-      <group scale={[1, 1, 1]}>
-        <mesh
-          receiveShadow
-          position={[0, -1.5, 0]}
-          rotation={[-Math.PI / 2, 0, 0]}
-        >
-          <planeGeometry args={[30, 30]} />
-          <meshStandardMaterial color="#a46b2d" />
-        </mesh>
-      </group>
-
-      <group scale={0.03} position={[0, -1.49, -2]} castShadow>
-        <Computer />
-      </group>
-    </Canvas>
-  );
+  // Try to render the 3D component, catch errors
+  try {
+    return (
+      <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
+        <ambientLight intensity={0.5} color="#fff4e6" />
+        <directionalLight
+          position={[5, 5, 3]}
+          intensity={2.5}
+          color="#ffd9b3"
+        />
+        <directionalLight
+          position={[5, 9, 1]}
+          castShadow
+          intensity={2.5}
+          color="#ffd9b3"
+        />
+        <OrbitControls
+          enableZoom={false}
+          minPolarAngle={Math.PI / 5}
+          maxPolarAngle={Math.PI / 2}
+        />
+        <group scale={[1, 1, 1]}>
+          <mesh
+            receiveShadow
+            position={[0, -1.5, 0]}
+            rotation={[-Math.PI / 2, 0, 0]}
+          >
+            <planeGeometry args={[30, 30]} />
+            <meshStandardMaterial color="#a46b2d" />
+          </mesh>
+        </group>
+        <Suspense fallback={null}>
+          <group scale={0.03} position={[0, -1.49, -2]} castShadow>
+            <Computer />
+          </group>
+        </Suspense>
+      </Canvas>
+    );
+  } catch (error) {
+    console.error("Error rendering 3D component:", error);
+    setHasError(true);
+    return null;
+  }
 };
 
 export default ContactExperience;

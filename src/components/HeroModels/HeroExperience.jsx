@@ -42,39 +42,50 @@ import HeroLights from "./HeroLights";
 import Particles from "./Particles";
 
 const HeroExperience = () => {
-  const isTablet = useMediaQuery({ query: "(max-width:1024px)" });
-  const isMobile = useMediaQuery({ query: "(max-width:768px)" });
-
   const [isClient, setIsClient] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  // Check if we're in the browser environment
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null;
+  const isTablet = useMediaQuery({ query: "(max-width:1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width:768px)" });
 
-  return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      <Suspense fallback={null}>
-        <OrbitControls
-          enablePan={false}
-          enableZoom={!isTablet}
-          maxDistance={20}
-          minDistance={5}
-          minPolarAngle={Math.PI / 5}
-          maxPolarAngle={Math.PI / 2}
-        />
-        <HeroLights />
-        <Particles count={100} />
-        <group
-          scale={isMobile ? 0.7 : 1}
-          position={[0, -3.5, 0]}
-          rotation={[0, -Math.PI / 4, 0]}
-        >
-          <Room />
-        </group>
-      </Suspense>
-    </Canvas>
-  );
+  // Don't render anything on server or if there's an error
+  if (!isClient || hasError) return null;
+
+  // Try to render the 3D component, catch errors
+  try {
+    return (
+      <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+        <Suspense fallback={null}>
+          <OrbitControls
+            enablePan={false}
+            enableZoom={!isTablet}
+            maxDistance={20}
+            minDistance={5}
+            minPolarAngle={Math.PI / 5}
+            maxPolarAngle={Math.PI / 2}
+          />
+          <HeroLights />
+          <Particles count={100} />
+          <group
+            scale={isMobile ? 0.7 : 1}
+            position={[0, -3.5, 0]}
+            rotation={[0, -Math.PI / 4, 0]}
+          >
+            <Room />
+          </group>
+        </Suspense>
+      </Canvas>
+    );
+  } catch (error) {
+    console.error("Error rendering 3D component:", error);
+    setHasError(true);
+    return null;
+  }
 };
 
 export default HeroExperience;
