@@ -169,7 +169,7 @@ const Experience = () => {
           start: "top 60%",
         },
       });
-    }, "<");
+    });
   }, []);
 
   return (
@@ -187,6 +187,7 @@ const Experience = () => {
             {expCards.map((card, index) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
+                  {/* სწორად გადავცემთ index-ს როგორც key-ის საშუალებას */}
                   <GlowCard card={card} index={index}>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
@@ -204,7 +205,7 @@ const Experience = () => {
                         {index === 0 ? (
                           <Foto />
                         ) : (
-                          <img src={card.logoPath} alt="logo" /> // სხვა კარდებისთვის img
+                          <img src={card.logoPath} alt="logo" />
                         )}
                       </div>
                       <div>
@@ -215,8 +216,8 @@ const Experience = () => {
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className="text-lg">
+                            (responsibility, respIndex) => (
+                              <li key={respIndex} className="text-lg">
                                 {responsibility}
                               </li>
                             )
