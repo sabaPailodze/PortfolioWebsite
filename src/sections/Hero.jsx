@@ -144,9 +144,9 @@ const Hero = () => {
           </div>
         </header>
         <figure>
-          <div className="hero-3d-layout">
+          {/* <div className="hero-3d-layout">
             {shouldLoad3D && <HeroExperience />}
-          </div>
+          </div> */}
         </figure>
       </div>
       <AnimatedCounter />
