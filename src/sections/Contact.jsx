@@ -244,6 +244,12 @@ const Contact = () => {
             {/* <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               {shouldLoad3D && <ContactExperience />}
             </div> */}
+
+            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+              {typeof window !== "undefined" && shouldLoad3D && (
+                <ContactExperience />
+              )}
+            </div>
           </div>
         </div>
       </div>
