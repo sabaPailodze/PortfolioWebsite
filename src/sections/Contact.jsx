@@ -179,8 +179,11 @@ const Contact = () => {
           title="Get in Touch – Let's Connect"
           sub="💬 Have questions or ideas? Let's talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
+        {/* <div className="grid-12-cols mt-16"> */}
+        {/* როდესაც 3დ მოდელი იქნება დაკომენტარებულ 2 ხაზს დავტოვებ დანარჩენ 2-ს წავშლი */}
+        <div className="flex justify-center mt-16">
+          {/* <div className="xl:col-span-5"> */}
+          <div className="w-full xl:w-[60%]">
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}
@@ -240,17 +243,12 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            {/* <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              {shouldLoad3D && <ContactExperience />}
-            </div> */}
-
+          {/* <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              {typeof window !== "undefined" && shouldLoad3D && (
-                <ContactExperience />
-              )}
+              {shouldLoad3D && <ContactExperience />}
             </div>
-          </div>
+          </div> */}
+          {/* 3დ მოდელი ამ ეტაპზე არ მუშაობს ამიტომ არის დაკომენტარებული */}
         </div>
       </div>
     </section>

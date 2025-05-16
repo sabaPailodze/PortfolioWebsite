@@ -80,8 +80,12 @@ section {
     @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
   }
 
-  .hero-layout {
+  /* .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+  } */
+
+  .hero-layout {
+    @apply relative z-10 xl:mt-20 mt-32 md:h-[90vh] h-[35vh] flex xl:items-center items-start justify-center;
   }
 
   .hero-text {
