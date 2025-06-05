@@ -167,61 +167,35 @@ const techStackIcons = [
   },
 ];
 
-// const expCards = [
-//   {
-//     review:
-//       "Saba brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-//     imgPath: "/images/tiksit.svg",
-//     // imgPath: "/images/exp1.png",
-//     logoPath: "/images/logo1.png",
-//     title: "Frontend Developer",
-//     date: "November 2024 - Present",
-//     responsibilities: [
-//       "Developed and maintained user-facing features for the Hostinger website.",
-//       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-//       "Optimized web applications for maximum speed and scalability.",
-//     ],
-//   },
-//   {
-//     review:
-//       "Saba’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-//     imgPath: "/images/Kolkhisea.svg",
-//     logoPath: "/images/kol-logo.svg",
-//     title: "React Developer",
-//     date: "February 2025 - Present",
-//     responsibilities: [
-//       "Led the development of Docker's web applications, focusing on scalability.",
-//       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-//       "Contributed to open-source projects that were used with the Docker ecosystem.",
-//     ],
-//   },
-// ];
-
 const expCards = [
   {
     review:
-      "Saba brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      "Saba played a key role in developing Tiksit’s customer-facing interface. His attention to detail and proactive communication helped us ship reliable features quickly and efficiently.",
     imgPath: "/images/tiksit.svg",
-    logoPath: "", // Placeholder ან ცარიელი
+    logoPath: "",
     title: "Frontend Developer",
     date: "November 2024 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Implemented user-facing features using React, Next.js, and TypeScript.",
+      "Fixed bugs and added new functionalities to improve platform usability.",
+      "Integrated front-end components with REST APIs and real-time data.",
+      "Worked closely with designers and product managers to deliver responsive and accessible UI.",
+      "Contributed to the live production-level SaaS platform in a hybrid environment.",
     ],
   },
   {
     review:
-      "Saba’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Saba demonstrated excellent frontend development skills while working with us on Kolkhisea. His ability to blend cultural aesthetics with modern technology really brought the platform to life.",
     imgPath: "/images/Kolkhisea.svg",
     logoPath: "/images/kol-logo.svg",
-    title: "React Developer",
+    title: "React Developer (Contract)",
     date: "February 2025 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built a culturally inspired real estate web platform using React, Next.js, and TypeScript.",
+      "Implemented multilingual support (English, Georgian, Russian) for diverse audiences.",
+      "Integrated dynamic property data via REST APIs.",
+      "Developed reusable UI components with Tailwind CSS reflecting luxury and heritage.",
+      "Collaborated with designers, backend engineers, and stakeholders to deliver a polished user experience.",
     ],
   },
 ];
