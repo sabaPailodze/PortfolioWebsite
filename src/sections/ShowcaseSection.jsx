@@ -39,7 +39,12 @@ const ShowcaseSection = () => {
           <div className="first-project-wrapper" ref={project1}>
             <div className="image-wrapper">
               <a href="https://tiksit.com/     " target="_blank">
-                <img src="/images/project1.png" alt="TIKSIT" />
+                <img
+                  // src="/images/kolkhi.jpg"
+                  src="/images/tiksit.jpg"
+                  alt="TIKSIT"
+                  className="bg-[#fffffff0]"
+                />
               </a>
               {/* am images magivrad unda ikos TIKSIT is foto  */}
             </div>
@@ -58,9 +63,9 @@ const ShowcaseSection = () => {
           </div>
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2}>
-              <div className="image-wrapper bg-[#ffeddb]">
+              <div className="image-wrapper bg-[#f9f2eaf9]">
                 <a href="https://kolkhisea.vercel.app/" target="_blank">
-                  <img src="/images/project2.png" alt="Kolkhisea" />
+                  <img src="/images/kolkhi.jpg" alt="Kolkhisea" />
                 </a>
                 {/* aq ikneba KOlkhiseas is foto */}
               </div>
@@ -75,12 +80,16 @@ const ShowcaseSection = () => {
               </p>
             </div>
             <div className="project" ref={project3}>
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper bg-[#fffffff0]">
                 <a
                   href="https://use-popcorn-iota-pearl.vercel.app/"
                   target="_blank"
                 >
-                  <img src="/images/project3.png" alt="usePopCorn" />
+                  <img
+                    src="/images/tiksit.jpg"
+                    alt="usePopCorn"
+                    className="bg-cover"
+                  />
                 </a>
                 {/* aq ikneba usePopcorn is foto */}
               </div>
