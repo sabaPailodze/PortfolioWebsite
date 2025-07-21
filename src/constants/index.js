@@ -132,6 +132,18 @@ const techStackImgs = [
     name: "Github",
     imgPath: "/images/logos/github-2.svg",
   },
+  {
+    name: "PHP",
+    imgPath: "/images/logos/php2.svg",
+  },
+  {
+    name: "Laravel",
+    imgPath: "/images/logos/laravel2.svg",
+  },
+  {
+    name: "MySql",
+    imgPath: "/images/logos/mysql2.svg",
+  },
 ];
 
 const techStackIcons = [
@@ -167,39 +179,71 @@ const techStackIcons = [
   },
 ];
 
+// const expCards = [
+//   {
+//     review:
+//       "Saba played a key role in developing Tiksit’s customer-facing interface. His attention to detail and proactive communication helped us ship reliable features quickly and efficiently.",
+//     imgPath: "/images/tiksit.svg",
+//     logoPath: "",
+//     title: "Frontend Developer",
+//     date: "November 2024 - Present",
+//     responsibilities: [
+//       "Implemented user-facing features using React, Next.js, and TypeScript.",
+//       "Fixed bugs and added new functionalities to improve platform usability.",
+//       "Integrated front-end components with REST APIs and real-time data.",
+//       "Worked closely with designers and product managers to deliver responsive and accessible UI.",
+//       "Contributed to the live production-level SaaS platform in a hybrid environment.",
+//     ],
+//   },
+//   {
+//     review:
+//       "Saba demonstrated excellent frontend development skills while working with us on Kolkhisea. His ability to blend cultural aesthetics with modern technology really brought the platform to life.",
+//     imgPath: "/images/Kolkhisea.svg",
+//     logoPath: "/images/kol-logo.svg",
+//     title: "React Developer (Contract)",
+//     date: "February 2025 - Present",
+//     responsibilities: [
+//       "Built a culturally inspired real estate web platform using React, Next.js, and TypeScript.",
+//       "Implemented multilingual support (English, Georgian, Russian) for diverse audiences.",
+//       "Integrated dynamic property data via REST APIs.",
+//       "Developed reusable UI components with Tailwind CSS reflecting luxury and heritage.",
+//       "Collaborated with designers, backend engineers, and stakeholders to deliver a polished user experience.",
+//     ],
+//   },
+// ];
+
 const expCards = [
   {
     review:
-      "Saba played a key role in developing Tiksit’s customer-facing interface. His attention to detail and proactive communication helped us ship reliable features quickly and efficiently.",
+      "Saba played a key role in developing Tiksit's internal ticketing management system. His technical skills in Laravel and React, combined with his collaborative approach in our scrum environment, helped us build reliable backend solutions efficiently.",
     imgPath: "/images/tiksit.svg",
     logoPath: "",
-    title: "Frontend Developer",
-    date: "November 2024 - Present",
+    title: "Full Stack Developer (Intern)",
+    date: "June 2024 - February 2025",
     responsibilities: [
-      "Implemented user-facing features using React, Next.js, and TypeScript.",
-      "Fixed bugs and added new functionalities to improve platform usability.",
-      "Integrated front-end components with REST APIs and real-time data.",
-      "Worked closely with designers and product managers to deliver responsive and accessible UI.",
-      "Contributed to the live production-level SaaS platform in a hybrid environment.",
+      "Participated in developing internal ticketing management system using Laravel, PHP, and MySQL.",
+      "Created and architected RESTful APIs integrated with frontend systems.",
+      "Built user interfaces and interactions using React.js.",
+      "Performed code refactoring and implemented optimized SQL queries for performance improvement.",
+      "Worked in scrum environment, actively participated in daily meetings and managed tasks in JIRA.",
     ],
   },
   {
     review:
-      "Saba demonstrated excellent frontend development skills while working with us on Kolkhisea. His ability to blend cultural aesthetics with modern technology really brought the platform to life.",
+      "Saba demonstrated excellent full-stack development skills while working with us on Kolkhisea. His ability to blend traditional Kobuleti culture with modern web standards really brought our real estate platform to life.",
     imgPath: "/images/Kolkhisea.svg",
     logoPath: "/images/kol-logo.svg",
-    title: "React Developer (Contract)",
-    date: "February 2025 - Present",
+    title: "Full Stack Developer (Contract)",
+    date: "March 2025 - Present",
     responsibilities: [
-      "Built a culturally inspired real estate web platform using React, Next.js, and TypeScript.",
-      "Implemented multilingual support (English, Georgian, Russian) for diverse audiences.",
-      "Integrated dynamic property data via REST APIs.",
-      "Developed reusable UI components with Tailwind CSS reflecting luxury and heritage.",
-      "Collaborated with designers, backend engineers, and stakeholders to deliver a polished user experience.",
+      "Built a responsive real estate web application using PHP, Laravel, React, and Next.js reflecting Kobuleti's traditional spirit and modern standards.",
+      "Implemented RESTful API integrations and managed MySQL database for CMS support.",
+      "Conducted code refactoring, improved backend performance and ensured security standards.",
+      "Collaborated with contractors, maintained quality control and active communication.",
+      "Delivered a culturally-inspired platform showcasing luxury properties in Kobuleti.",
     ],
   },
 ];
-
 const expLogos = [
   {
     name: "logo1",
